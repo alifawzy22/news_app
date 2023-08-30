@@ -27,15 +27,21 @@ class _NewsListBuilderState extends State<NewsListBuilder> {
         if (snapshot.hasData) {
           return NewsList(articles: snapshot.data!);
         } else if (snapshot.hasError) {
-          return const SliverToBoxAdapter(
-            child: Center(
-              child: Text('Oops,There is an Error .. Try Later'),
+          return SliverToBoxAdapter(
+            child: SizedBox(
+              height: MediaQuery.of(context).size.height / 2,
+              child: const Center(
+                child: Text('Oops,There is an Error .. Try Later'),
+              ),
             ),
           );
         } else {
-          return const SliverToBoxAdapter(
-            child: Center(
-              child: CircularProgressIndicator(),
+          return SliverToBoxAdapter(
+            child: SizedBox(
+              height: MediaQuery.of(context).size.height / 2,
+              child: const Center(
+                child: CircularProgressIndicator(),
+              ),
             ),
           );
         }
