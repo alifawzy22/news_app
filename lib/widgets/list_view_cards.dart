@@ -9,20 +9,33 @@ class ListViewCards extends StatelessWidget {
 
   final List<ListViewCardItemModel> viewCardItemList = [
     ListViewCardItemModel(
-        image: 'assets/images/general.jpg', imageCardItemName: 'General'),
+      image: 'assets/images/general.jpg',
+      imageCardItemName: 'General',
+    ),
     ListViewCardItemModel(
-        image: 'assets/images/Sports.jpg', imageCardItemName: 'Sports'),
+      image: 'assets/images/Sports.jpg',
+      imageCardItemName: 'Sports',
+    ),
     ListViewCardItemModel(
-        image: 'assets/images/science.jpg', imageCardItemName: 'Science'),
+      image: 'assets/images/science.jpg',
+      imageCardItemName: 'Science',
+    ),
     ListViewCardItemModel(
-        image: 'assets/images/Business.jpg', imageCardItemName: 'Business'),
+      image: 'assets/images/Business.jpg',
+      imageCardItemName: 'Business',
+    ),
     ListViewCardItemModel(
-        image: 'assets/images/Entertainment.jpg',
-        imageCardItemName: 'Entertainment'),
+      image: 'assets/images/Entertainment.jpg',
+      imageCardItemName: 'Entertainment',
+    ),
     ListViewCardItemModel(
-        image: 'assets/images/tecnology.jpg', imageCardItemName: 'Technology'),
+      image: 'assets/images/tecnology.jpg',
+      imageCardItemName: 'Technology',
+    ),
     ListViewCardItemModel(
-        image: 'assets/images/health.png', imageCardItemName: 'Health'),
+      image: 'assets/images/health.png',
+      imageCardItemName: 'Health',
+    ),
   ];
 
   @override
@@ -34,8 +47,13 @@ class ListViewCards extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemCount: viewCardItemList.length,
           itemBuilder: (context, index) {
-            return ListViewCardItem(
-              listViewCardItemModel: viewCardItemList[index],
+            return GestureDetector(
+              onTap: () {
+                // Show specific news per category
+              },
+              child: ListViewCardItem(
+                listViewCardItemModel: viewCardItemList[index],
+              ),
             );
           }),
     );
