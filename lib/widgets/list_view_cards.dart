@@ -9,29 +9,20 @@ class ListViewCards extends StatelessWidget {
 
   final List<ListViewCardItemModel> viewCardItemList = [
     ListViewCardItemModel(
+        image: 'assets/images/general.jpg', imageCardItemName: 'General'),
+    ListViewCardItemModel(
         image: 'assets/images/Sports.jpg', imageCardItemName: 'Sports'),
     ListViewCardItemModel(
-        image: 'assets/images/BI.jpeg',
-        imageCardItemName: 'Business Intelligence'),
+        image: 'assets/images/science.jpg', imageCardItemName: 'Science'),
     ListViewCardItemModel(
         image: 'assets/images/Business.jpg', imageCardItemName: 'Business'),
-    ListViewCardItemModel(
-        image: 'assets/images/Community.png', imageCardItemName: 'Community'),
-    ListViewCardItemModel(
-        image: 'assets/images/CS.jpg', imageCardItemName: 'CS'),
-    ListViewCardItemModel(
-        image: 'assets/images/Economy.jpg', imageCardItemName: 'Economy'),
     ListViewCardItemModel(
         image: 'assets/images/Entertainment.jpg',
         imageCardItemName: 'Entertainment'),
     ListViewCardItemModel(
-        image: 'assets/images/IS.jpg', imageCardItemName: 'IS'),
+        image: 'assets/images/tecnology.jpg', imageCardItemName: 'Technology'),
     ListViewCardItemModel(
-        image: 'assets/images/IT.jpg', imageCardItemName: 'IT'),
-    ListViewCardItemModel(
-        image: 'assets/images/Management.jpg', imageCardItemName: 'Management'),
-    ListViewCardItemModel(
-        image: 'assets/images/Politics.jpg', imageCardItemName: 'Politics'),
+        image: 'assets/images/health.png', imageCardItemName: 'Health'),
   ];
 
   @override

@@ -7,7 +7,7 @@ class NewsService {
 
   Future<List<ArticleModel>> getHeadLineNews() async {
     Response response = await dio.get(
-        'https://newsapi.org/v2/top-headlines?country=us&apiKey=b486d4af144e48ba97ea5296005154f0');
+        'https://newsapi.org/v2/top-headlines?country=us&apiKey=b486d4af144e48ba97ea5296005154f0&category=general');
 
     List<ArticleModel> articles = [];
 
