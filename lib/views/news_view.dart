@@ -44,7 +44,7 @@ class NewsApp extends StatelessWidget {
                 height: 32,
               ),
             ),
-            const NewsListBuilder(),
+            const NewsListBuilder(category: 'general'),
           ],
         ),
       ),

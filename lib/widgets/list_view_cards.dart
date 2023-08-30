@@ -47,13 +47,8 @@ class ListViewCards extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemCount: viewCardItemList.length,
           itemBuilder: (context, index) {
-            return GestureDetector(
-              onTap: () {
-                // Show specific news per category
-              },
-              child: ListViewCardItem(
-                listViewCardItemModel: viewCardItemList[index],
-              ),
+            return ListViewCardItem(
+              listViewCardItemModel: viewCardItemList[index],
             );
           }),
     );
